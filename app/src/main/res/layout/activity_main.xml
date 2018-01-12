@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tistory.dayglo.smarts_camera.MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.tistory.dayglo.smarts_camera.MainActivity"
+    >
 
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
+        <ImageButton
+            android:id="@+id/button_capture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_camera_roll_black_24dp"
+            android:layout_gravity="bottom|center"/>
 
-</android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+</LinearLayout>
