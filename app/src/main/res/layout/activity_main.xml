@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
+    android:orientation="horizontal"
     tools:context="com.tistory.dayglo.smarts_camera.MainActivity"
     >
 
@@ -18,8 +17,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_gravity="center"
         >
 
         <ImageButton
@@ -28,8 +27,7 @@
             android:layout_height="60dp"
             android:src="@drawable/ic_photo_camera_black_24dp"
             android:background="@color/transparent"
-            android:layout_gravity="center|bottom"
-            android:layout_marginRight="20dp"
+            android:layout_gravity="right"
             />
 
         <ImageButton
@@ -38,7 +36,7 @@
             android:layout_height="60dp"
             android:src="@drawable/ic_camera_roll_black_24dp"
             android:background="@color/transparent"
-            android:layout_gravity="bottom|center"
+            android:layout_gravity="right"
             />
 
     </LinearLayout>

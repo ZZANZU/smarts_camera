@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 // get an imagefrom the camera
                 mCamera.takePicture(null, null, mPicture);
                 Toast.makeText(MainActivity.this, "picture taken!", Toast.LENGTH_SHORT).show();
-                mCamera.release();
             }
         });
 
